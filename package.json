@@ -1,0 +1,35 @@
+{
+    "name": "supply-chain-management",
+    "version": "1.0.0",
+    "description": "Supply Chain Management System",
+    "main": "backend/server.js",
+    "type": "module",
+    "scripts": {
+      "start": "node backend/server.js",
+      "build": " npm run build",
+      "server": "nodemon backend/server.js",
+      "client": "npm start",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "install-all": "npm install && npm install"
+    },
+    "keywords": [
+      "supply chain",
+      "management",
+      "inventory",
+      "logistics"
+    ],
+    "author": "kishore",
+    "license": "ISC",
+    "dependencies": {
+      "bcrypt": "^5.1.0",
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.3",
+      "express": "^4.18.2",
+      "jsonwebtoken": "^9.0.0",
+      "mysql2": "^3.3.1"
+    },
+    "devDependencies": {
+      "concurrently": "^8.0.1",
+      "nodemon": "^2.0.22"
+    }
+  }
